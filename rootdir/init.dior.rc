@@ -48,8 +48,8 @@ on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
     symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    mount_all fstab.dior
-    swapon_all fstab.dior
+    mount_all /vendor/etc/fstab.dior
+    swapon_all /vendor/etc/fstab.dior
 
     restorecon_recursive /persist
 
