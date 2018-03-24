@@ -35,6 +35,11 @@ ro.qc.sdk.izat.service_mask=0x5
 persist.gps.qc_nlp_in_use=0
 persist.loc.nlp_name=com.qualcomm.services.location
 
+# Qualcomm® aptX™
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
+
 # Telephony
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
@@ -58,3 +63,4 @@ persist.sys.usb.config=adb
 
 camera.disable_treble=true
 ro.bionic.ld.warning=0
+ro.use_data_netmgrd=true
