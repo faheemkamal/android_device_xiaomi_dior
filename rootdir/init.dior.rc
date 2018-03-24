@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import init.dior.usb.rc
+import  /vendor/etc/init/hw/init.dior.usb.rc
 
 on early-init
 
