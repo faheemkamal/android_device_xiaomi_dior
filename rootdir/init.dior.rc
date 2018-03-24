@@ -366,12 +366,6 @@ service qseecomd /vendor/bin/qseecomd
     user root
     group root
 
-
-service audiod /system/bin/audiod
-    class late_start
-    user system
-    group system
-
 service adsprpcd /vendor/bin/adsprpcd
     class main
     user media
