@@ -49,7 +49,6 @@ on fs
     symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
 
     mount_all /vendor/etc/fstab.dior
-    swapon_all /vendor/etc/fstab.dior
 
     restorecon_recursive /persist
 
@@ -408,6 +407,10 @@ on charger
     write /sys/devices/system/cpu/cpu3/online 0
 
 on property:sys.boot_completed=1
+
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.dior
+
     # Temp hack to fix torch not being registered on boot
     restart camera
     restart media
