@@ -112,9 +112,9 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # MoKee Hardware
-BOARD_HARDWARE_CLASS := \
-    hardware/mokee/mkhw \
-    $(LOCAL_PATH)/mkhw
+#BOARD_HARDWARE_CLASS := \
+#    hardware/mokee/mkhw \
+#    $(LOCAL_PATH)/mkhw
     
 # No old RPC for prop
 TARGET_NO_RPC := true
